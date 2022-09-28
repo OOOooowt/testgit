@@ -8,6 +8,8 @@ import com.alibaba.druid.sql.dialect.mysql.visitor.MySqlSchemaStatVisitor;
 import com.alibaba.druid.sql.parser.SQLStatementParser;
 import com.alibaba.druid.util.JdbcConstants;
 
+import java.util.Date;
+
 /**
  * TODO
  *
@@ -30,6 +32,8 @@ public class TestDruid {
         System.out.println(visitor.getTables());
         System.out.println(visitor.getConditions());
         System.out.println(visitor.getDbType());
+
+        System.out.println(new Date());
 
 //        SQLStatementParser parser = new MySqlStatementParser("select * from t where id = 1");
 //        SQLStatement sqlStatement = parser.parseStatement();
